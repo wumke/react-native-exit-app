@@ -1,0 +1,29 @@
+{
+  "name": "react-native-exit-app",
+  "version": "0.1.0",
+  "description": "Exit,close,kill,shutdown app completely for React Native on iOS and Android.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wumke/react-native-exit-app"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "exit",
+    "close",
+    "shutdown",
+    "kill",
+    "android",
+    "ios"
+  ],
+  "author": "Wumke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wumke/react-native-exit-app/issues"
+  },
+  "homepage": "http://watchwimswork.be"
+}
