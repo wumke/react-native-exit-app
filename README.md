@@ -1,13 +1,19 @@
 # react-native-exit-app
 Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
 
+NOTICE:
+- for React Native < 0.47 use react-native-immediate-phone-call <1.x.x
+- for React Native > 0.47 use react-native-immediate-phone-call >=1.x.x
+
 ## Setup
 
+Fast and easy:
 ```bash
-npm install react-native-exit-app
+npm install react-native-exit-app --save
+react-native link react-native-exit-app
 ```
 
-Or add the latest version as dependeny to your package.json.
+Or manual: add the latest version as dependeny to your package.json.
 
 ```javascript
 {
@@ -21,12 +27,12 @@ Or add the latest version as dependeny to your package.json.
   }
 ```
 
-####iOS
+#### iOS
 * Add RNExitApp.xcoderproj into your project in the Libraries folder.
 * Add the .a file on the General tab of your target under Linked Frameworks And Libraries
 * Add the .a file on the Build Phases tab of your target under Link Binary With Libraries
 
-####Android
+#### Android
 * In the settings.gradle
   ```
     include ':react-native-exit-app', ':app'
