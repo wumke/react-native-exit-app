@@ -139,6 +139,7 @@
 					"$(SRCROOT)/../../react-native/React",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_LDFLAGS = "-ObjC";
@@ -159,6 +160,7 @@
 					"$(SRCROOT)/../../react-native/React",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				OTHER_LDFLAGS = "-ObjC";
