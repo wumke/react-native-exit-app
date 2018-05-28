@@ -2,8 +2,8 @@
 Exit / Close / Kill / shutdown your react native app. Does not invoke a crash notification.
 
 NOTICE:
-- for React Native < 0.47 use react-native-immediate-phone-call <1.x.x
-- for React Native > 0.47 use react-native-immediate-phone-call >=1.x.x
+- for React Native < 0.47 use react-native-exit-app <1.x.x
+- for React Native > 0.47 use react-native-exit-app >=1.x.x
 
 ## Setup
 
