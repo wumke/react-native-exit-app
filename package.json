@@ -21,7 +21,7 @@
     "ios"
   ],
   "author": "Wumke",
-  "license": "GPLv3",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wumke/react-native-exit-app/issues"
   },
