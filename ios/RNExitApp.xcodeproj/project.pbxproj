@@ -33,7 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		07927F57240E83A80037032C /* libRNExitApp-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNExitApp-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07927F57240E83A80037032C /* libRNExitApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNExitApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15209BEF1D250F63000D0F44 /* libRNExitApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNExitApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF75E3F71E2FBEDC005136CC /* RNExitApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNExitApp.m; path = RNExitApp/RNExitApp.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				15209BEF1D250F63000D0F44 /* libRNExitApp.a */,
-				07927F57240E83A80037032C /* libRNExitApp-tvos.a */,
+				07927F57240E83A80037032C /* libRNExitApp-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07927F4F240E83A80037032C /* RNExitApp-tvos */ = {
+		07927F4F240E83A80037032C /* RNExitApp-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvos" */;
+			buildConfigurationList = 07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvOS" */;
 			buildPhases = (
 				07927F50240E83A80037032C /* Sources */,
 				07927F52240E83A80037032C /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = "RNExitApp-tvos";
+			name = "RNExitApp-tvOS";
 			productName = RNExitApp;
-			productReference = 07927F57240E83A80037032C /* libRNExitApp-tvos.a */;
+			productReference = 07927F57240E83A80037032C /* libRNExitApp-tvOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		15209BEE1D250F63000D0F44 /* RNExitApp */ = {
@@ -146,7 +146,7 @@
 			projectRoot = "";
 			targets = (
 				15209BEE1D250F63000D0F44 /* RNExitApp */,
-				07927F4F240E83A80037032C /* RNExitApp-tvos */,
+				07927F4F240E83A80037032C /* RNExitApp-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvos" */ = {
+		07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07927F55240E83A80037032C /* Debug */,
