@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07927F51240E83A80037032C /* RNExitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNExitApp.m */; };
 		AF75E3F81E2FBEDC005136CC /* RNExitApp.m in Sources */ = {isa = PBXBuildFile; fileRef = AF75E3F71E2FBEDC005136CC /* RNExitApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		07927F53240E83A80037032C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15209BED1D250F63000D0F44 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +33,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07927F57240E83A80037032C /* libRNExitApp-tvos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNExitApp-tvos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15209BEF1D250F63000D0F44 /* libRNExitApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNExitApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF75E3F71E2FBEDC005136CC /* RNExitApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNExitApp.m; path = RNExitApp/RNExitApp.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07927F52240E83A80037032C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15209BEC1D250F63000D0F44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				15209BEF1D250F63000D0F44 /* libRNExitApp.a */,
+				07927F57240E83A80037032C /* libRNExitApp-tvos.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +84,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		07927F4F240E83A80037032C /* RNExitApp-tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvos" */;
+			buildPhases = (
+				07927F50240E83A80037032C /* Sources */,
+				07927F52240E83A80037032C /* Frameworks */,
+				07927F53240E83A80037032C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNExitApp-tvos";
+			productName = RNExitApp;
+			productReference = 07927F57240E83A80037032C /* libRNExitApp-tvos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		15209BEE1D250F63000D0F44 /* RNExitApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNExitApp" */;
@@ -101,6 +137,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 327633391BFAAD7E004DA88E;
@@ -109,11 +146,20 @@
 			projectRoot = "";
 			targets = (
 				15209BEE1D250F63000D0F44 /* RNExitApp */,
+				07927F4F240E83A80037032C /* RNExitApp-tvos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07927F50240E83A80037032C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07927F51240E83A80037032C /* RNExitApp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		15209BEB1D250F63000D0F44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +171,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		07927F55240E83A80037032C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/../../react-native/React",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Debug;
+		};
+		07927F56240E83A80037032C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/../../react-native/React",
+					"$(SRCROOT)/../../../react-native/React/**",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+			};
+			name = Release;
+		};
 		15209BF61D250F63000D0F44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -214,6 +306,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Debug;
 		};
@@ -255,6 +348,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -262,6 +356,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07927F54240E83A80037032C /* Build configuration list for PBXNativeTarget "RNExitApp-tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07927F55240E83A80037032C /* Debug */,
+				07927F56240E83A80037032C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		15209BF51D250F63000D0F44 /* Build configuration list for PBXNativeTarget "RNExitApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
