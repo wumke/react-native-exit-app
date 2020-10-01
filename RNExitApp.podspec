@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
 	s.preserve_paths = 'README.md', 'package.json', '*.js'
 	s.source_files   = 'ios/RNExitApp/**/*.{h,m}'
 
-	s.dependency 'React'
+	s.dependency 'React-Core'
 end
