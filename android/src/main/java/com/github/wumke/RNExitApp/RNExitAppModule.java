@@ -1,6 +1,5 @@
 package com.github.wumke.RNExitApp;
 
-import android.app.AlarmManager;
 import android.app.Application;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -17,14 +16,8 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class RNExitAppModule extends ReactContextBaseJavaModule {
-
-    ReactApplicationContext reactContext;
-    AlarmManager alarmManager;
-
     public RNExitAppModule(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.reactContext = reactContext;
-        alarmManager = (AlarmManager) reactContext.getSystemService(Context.ALARM_SERVICE);
     }
 
     @Override
