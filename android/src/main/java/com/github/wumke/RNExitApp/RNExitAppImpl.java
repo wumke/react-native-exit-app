@@ -1,8 +1,5 @@
 package  com.github.wumke.RNExitApp;
 
-import android.app.AlarmManager;
-import android.content.Context;
-
 import com.facebook.react.bridge.ReactApplicationContext;
 
 class RNExitAppImpl {
@@ -11,11 +8,8 @@ class RNExitAppImpl {
 
     ReactApplicationContext RCTContext;
 
-    AlarmManager alarmManager;
-
     public RNExitAppImpl(ReactApplicationContext reactContext) {
         RCTContext = reactContext;
-        alarmManager = (AlarmManager) reactContext.getSystemService(Context.ALARM_SERVICE);
     }
 
     public void exitApp() {
