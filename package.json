@@ -28,7 +28,7 @@
   },
   "homepage": "http://watchwimswork.be",
   "codegenConfig": {
-    "name": "RNExitApp",
+    "name": "RNExitAppSpec",
     "type": "modules",
     "jsSrcsDir": ".",
     "android": {
