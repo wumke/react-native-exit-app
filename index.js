@@ -1,8 +1,8 @@
-import {NativeModules} from 'react-native';
+import NativeRNExitApp from "./NativeRNExitApp";
 
 var RNExitApp = {
   exitApp: function() {
-        NativeModules.RNExitApp.exitApp();
+    NativeRNExitApp.exitApp();
   }
 };
 

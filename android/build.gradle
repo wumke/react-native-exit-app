@@ -19,7 +19,14 @@ def safeExtGet(prop, fallback) {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
 }
 
+def isNewArchitectureEnabled() {
+    return project.hasProperty("newArchEnabled") && project.newArchEnabled == "true"
+}
+
 apply plugin: 'com.android.library'
+if (isNewArchitectureEnabled()) {
+    apply plugin: 'com.facebook.react'
+}
 
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', 23)
@@ -28,14 +35,23 @@ android {
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion',16)
         targetSdkVersion safeExtGet('targetSdkVersion',22)
-        versionCode 2
-        versionName "1.1"
+        buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
     }
     lintOptions {
        warning 'InvalidPackage'
+    }
+
+    sourceSets {
+        main {
+            if (isNewArchitectureEnabled()) {
+                java.srcDirs += ['src/newarch']
+            } else {
+                java.srcDirs += ['src/oldarch']
+            }
+        }
     }
 }
 
