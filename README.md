@@ -4,8 +4,15 @@ Exit / Close / Kill / shutdown your react native app. Does not invoke a crash no
 NOTICE:
 - for React Native < 0.47 use react-native-exit-app <1.x.x
 - for React Native > 0.47 use react-native-exit-app >=1.x.x
+- React Native with **new architecture** enabled use react-native-exit-app >=2.x.x (**compatible with old architecture**)
 
 ## Setup
+
+NOTICE:
+Installation steps can be skipped in new architecture and newer React Native versions, just 
+```bash
+npm install react-native-exit-app --save
+```
 
 Fast and easy:
 ```bash
