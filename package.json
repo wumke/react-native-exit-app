@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/wumke/react-native-exit-app/issues"
   },
-  "homepage": "http://watchwimswork.be",
+  "homepage": "https://github.com/wumke/react-native-exit-app",
   "codegenConfig": {
     "name": "RNExitAppSpec",
     "type": "modules",
