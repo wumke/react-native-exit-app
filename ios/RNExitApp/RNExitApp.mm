@@ -12,7 +12,13 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(exitApp)
 {
-    exit(0);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[UIApplication sharedApplication] performSelector:@selector(suspend)];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            exit(0);
+        });
+    });
 };
 
 # pragma mark - New Architecture
