@@ -7,7 +7,7 @@
 #endif
 
 #if RCT_NEW_ARCH_ENABLED
-#import <React-Codegen/RNExitAppSpec/RNExitAppSpec.h>
+#import <RNExitAppSpec/RNExitAppSpec.h>
 #endif
 
 @interface RNExitApp : NSObject <RCTBridgeModule>
