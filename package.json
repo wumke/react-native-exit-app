@@ -30,7 +30,7 @@
   "codegenConfig": {
     "name": "RNExitAppSpec",
     "type": "modules",
-    "jsSrcsDir": ".",
+    "jsSrcsDir": "js",
     "android": {
       "javaPackageName": "com.github.wumke.RNExitApp"
     }
